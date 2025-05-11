@@ -15,3 +15,12 @@ export default function Home() {
     </div>
   );
 }
+
+/*installしたのは
+npm install react-icons
+fetch('https://pg62dljxb1.execute-api.ap-northeast-1.amazonaws.com/Sample') //0511(URLをラムダに)
+
+距離図るコンポーネント
+npm install leaflet-measure✖
+npm install @geoman-io/leaflet-geoman-free
+npm install leaflet-geometryutil */
