@@ -1,0 +1,67 @@
+[
+  {
+    "feature_id": 1,
+    "mesh500": 533945700,
+    "is_over15min": 1,
+    "lat_sw": 35.7010,
+    "lng_sw": 139.7520,
+    "lat_ne": 35.7035,
+    "lng_ne": 139.7560,
+    "project": "千代田区さくらまつり",
+    "percentage": "0～10%",
+    "id": "1"
+  },
+  {
+    "feature_id": 2,
+    "mesh500": 533945701,
+    "is_over15min": 1,
+    "lat_sw": 34.8570,
+    "lng_sw": 136.8050,
+    "lat_ne": 34.8595,
+    "lng_ne": 136.8090,
+    "project": "セントレア",
+    "percentage": "10～20%",
+    "id": "2"
+  },
+  {
+    "feature_id": 3,
+    "mesh500": 533945702,
+    "is_over15min": 0,
+    "lat_sw": 35.2545,
+    "lng_sw": 139.1545,
+    "lat_ne": 35.2570,
+    "lng_ne": 139.1580,
+    "project": "三菱地所大丸有エリア",
+    "percentage": "20～30%",
+    "id": "1"
+  },
+
+
+  
+  {
+    "feature_id": 1,
+    "mesh500": 123456,
+    "is_over15min": 0,
+    "lat_sw": 35.7030,
+    "lng_sw": 139.7530,
+    "lat_ne": 35.7040,
+    "lng_ne": 139.7540,
+    "project": "広島空港",
+    "percentage": "0～10%",
+    "id": "1"
+  },
+  {
+    "feature_id": 2,
+    "mesh500": 123457,
+    "is_over15min": 1,
+    "lat_sw": 35.7045,
+    "lng_sw": 139.7545,
+    "lat_ne": 35.7055,
+    "lng_ne": 139.7555,
+    "project": "広島空港",
+    "percentage": "0～10%",
+    "id": "1"
+  }
+
+
+]

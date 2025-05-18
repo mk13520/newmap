@@ -13,3 +13,13 @@ export function getSpeedColor(speed: number, transparent = false): string {
     return transparent ? found?.transparent ?? '#CCCCCC' : found?.color ?? '#CCCCCC';
   }
   
+  
+// 🟦 メッシュの色
+export const meshColors = {
+  over10: { border: '#5DAE8B', fill: 'rgba(93, 174, 139, 0.7)' },
+  over15: { border: '#538FBF', fill: 'rgba(103, 153, 192,0.7)' }
+};
+
+export function getMeshStyle(type: number) {
+  return type === 1 ? meshColors.over15 : meshColors.over10;
+}

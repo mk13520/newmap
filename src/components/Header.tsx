@@ -1,11 +1,27 @@
 
-export default function Header() {
-  return ( 
+type HeaderProps = {
+  project: string;
+  setProject: (value: string) => void;
+  percentage: string;
+  setPercentage: (value: string) => void;
+  id: string;
+  setId: (value: string) => void;
+};
+
+export default function Header({
+  project, setProject,
+  percentage, setPercentage,
+  id, setId
+}: HeaderProps) {
+  return (
     <header className="bg-gray-950 text-white p-4 flex flex-wrap items-center gap-4">
       
       {/*projectプルダウン*/}
       <div className="flex flex-col text-sm">
-        <select className="bg-white text-black px-4 py-2 rounded w-64">
+        <select className="bg-white text-black px-4 py-2 rounded w-64"
+        value={project}
+        onChange={(e) => setProject(e.target.value)} // ←これが必要
+        >
           <option>セントレア</option>
           <option>千代田区さくらまつり</option>
           <option>三菱地所大丸有エリア</option>
@@ -24,7 +40,10 @@ export default function Header() {
       </div>
 
       <div className="flex flex-col text-sm">
-        <select className="bg-white text-black px-4 py-2 rounded w-40">
+        <select className="bg-white text-black px-4 py-2 rounded w-40"
+        value={percentage}
+        onChange={(e) => setPercentage(e.target.value)} // ←これも必要
+        >
           <option>0～10%</option>
           <option>10～20%</option>
           <option>20～30%</option>
@@ -38,8 +57,12 @@ export default function Header() {
         </select>
       </div>
 
+
       <div className="flex flex-col text-sm">
           <input type="number" placeholder="ID" min="1" max="20"
+            value={id}
+            onChange={(e) => setId(e.target.value)}
+
             className="bg-white text-black px-4 py-2 rounded w-28"
           />
       </div>
