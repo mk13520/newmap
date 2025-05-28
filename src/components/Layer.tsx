@@ -23,7 +23,7 @@ export default function Layer({ layer, setLayer, showLog, setShowLog, showMesh, 
       </button>
 
       {open && (
-        <div className="mt-2 bg-white p-3 rounded shadow w-42 text-sm space-y-3">
+        <div className="mt-2 bg-white p-3 rounded shadow w-42 text-sm space-y-3"> {/*absolute top-0 left-0 bg-white p-3*/}
           <div>
             {[
               { id: 'osm', label: 'OpenStreetMap' },
